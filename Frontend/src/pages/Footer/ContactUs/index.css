@@ -1,0 +1,116 @@
+/* Contact.css */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    letter-spacing: 0.5px;
+    color: rgba(46, 45, 45, 0.921);
+    max-width: 1480px; 
+    margin: 0 auto;
+  }
+  
+  .page-header {
+    margin: 50px;
+    margin-top: 4rem;
+  }
+  
+  .heading {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .rte {
+    margin-top: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+  .text-center{
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .titles-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  
+  .titles-grid--item {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .titles-grid-item-content {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  .titles-grid-item-title{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    top: 15px;
+    
+  }
+  .para{
+    margin-top: 5px;
+  }
+  
+  .icon-wrapper {
+    margin-top: 20px;
+    width: 250px;
+    height: 120px;
+  }
+  
+  
+ .icon-wrapper img{
+    width: 60px;
+    position: relative;
+    left: 90px;
+ }
+
+ .button{
+   background-color: white;
+   border: none;
+ }
+
+.text-left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 190px;
+    margin-top: 5rem;
+}
+
+.text{
+    font-size: 14px;
+    color: rgba(46, 45, 45, 0.921);
+}
+.email{
+  margin-top:8px;
+  color: rgba(46, 45, 45, 0.921);
+  font-size: 14px;
+}
+.icons{
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  gap: 15px;
+}
+.inc{
+  font-size: 26px;
+  position: relative;
+  bottom: 2px;
+
+}
+li{
+    list-style: none;
+
+}
