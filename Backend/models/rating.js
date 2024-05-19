@@ -16,9 +16,11 @@ const RatingSchema = new mongoose.Schema({
         type:Number,
         required:true
     },
-},
-{ timestamps: true }
-);
+    createdAt:{
+        type:Date,
+        default:Date.now()
+    }
+});
 
 const Rating = mongoose.model("ratings", RatingSchema);
 

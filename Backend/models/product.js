@@ -16,7 +16,7 @@ const ProductSchema = new mongoose.Schema({
   discountedPrice: {
     type: Number,
   },
-  discountedPercent: {
+  discountedPersent: {
     type: Number,
   },
 
@@ -25,22 +25,22 @@ const ProductSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  // brand: {
-  //   type: String,
-  // },
-  // color: {
-  //   type: String,
-  // },
-  // size: [
-  //   {
-  //     name: {
-  //       type: String,
-  //     },
-  //     quantity: {
-  //       type: Number,
-  //     },
-  //   },
-  // ],
+  brand: {
+    type: String,
+  },
+  color: {
+    type: String,
+  },
+  size: [
+    {
+      name: {
+        type: String,
+      },
+      quantity: {
+        type: Number,
+      },
+    },
+  ],
   imageUrl: {
     type: String,
   },
@@ -64,9 +64,11 @@ const ProductSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Categories",
   },
-},
-{ timestamps: true }
-);
+  createdAt: {
+    type: Date,
+    default: Date.now(),
+  },
+});
 
 const Product = mongoose.model("Products", ProductSchema);
 
